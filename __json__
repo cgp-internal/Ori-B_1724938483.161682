@@ -1,0 +1,33 @@
+{
+    "main.js": {
+        "description": "Main entry point for the project. Handles CSV file operations and data population.",
+        "dependencies": {
+            "utils/csvHandler.js": [
+                "readCSV",
+                "writeCSV"
+            ],
+            "data/cars.csv": [
+                "cars CSV file"
+            ]
+        }
+    },
+    "utils/csvHandler.js": {
+        "description": "Utilities for reading and writing CSV files.",
+        "exposes": [
+            "readCSV",
+            "writeCSV"
+        ]
+    },
+    "data/cars.csv": {
+        "description": "CSV file for storing cars data. Initially empty, waiting for population.",
+        "exposes": [
+            "cars CSV file"
+        ]
+    },
+    "README.md": {
+        "description": "README with basic documentation and 'how to run' guide."
+    },
+    ".gitignore": {
+        "description": ".gitignore with node-modules and cache files."
+    }
+}
